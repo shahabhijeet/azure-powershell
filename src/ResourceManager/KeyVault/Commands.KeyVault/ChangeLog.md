@@ -19,6 +19,13 @@
 -->
 ## Current Release
 
+## Version 5.1.0
+* Fix piping issue in Set-AzureRmKeyVaultAccessPolicy
+* Updated help files to include full parameter types and correct input/output types.
+
+## Version 5.0.4
+* Update error message for Set-AzureRmKeyVaultAccessPolicy
+
 ## Version 5.0.3
 * Fixed formatting of OutputType in help files
 * Fix issue where all resources were being returned by Get-AzureRmKeyVault -Tag

@@ -27,9 +27,10 @@
     <DefineConstants>TRACE;RELEASE;NETSTANDARD;SIGN</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup >
+  <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Management.Authorization" Version="2.8.0-preview" />
     <PackageReference Include="Microsoft.Azure.Management.ManagementGroups" Version="1.1.0-preview" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
   <ItemGroup>

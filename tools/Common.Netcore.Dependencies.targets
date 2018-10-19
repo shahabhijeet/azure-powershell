@@ -57,10 +57,10 @@
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.4.0">
       <PrivateAssets Condition="'$(HideReferenceDependencies)' == 'true'">All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Azure.Common" Version="2.2.0">
+    <PackageReference Include="Microsoft.Azure.Common" Version="2.2.1">
       <PrivateAssets Condition="'$(HideReferenceDependencies)' == 'true'">All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Hyak.Common" Version="1.2.1">
+    <PackageReference Include="Hyak.Common" Version="1.2.2">
       <PrivateAssets Condition="'$(HideReferenceDependencies)' == 'true'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-06" PrivateAssets="All" />
@@ -68,9 +68,13 @@
   <PropertyGroup>
     <StorageToolsPath>$(NugetPackageRoot)microsoft.azure.powershell.storage\1.1.4-preview\tools\</StorageToolsPath>
   </PropertyGroup>
-  <ItemGroup Condition="'$(OmitJsonPackage)' != 'true'">
+  <!-- <ItemGroup Condition="'$(OmitJsonPackage)' != 'true'">
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1">
       <PrivateAssets Condition="'$(HideReferenceDependencies)' == 'true'">All</PrivateAssets>
     </PackageReference>
+  </ItemGroup> -->
+  <ItemGroup>
+    <!-- <None Include="$(LibraryToolsFolder)\app.config" Link="app.config" /> -->
+	<None Include="D:\myFork\psPreview\tools\app.config" Link="app.config" />
   </ItemGroup>
 </Project>

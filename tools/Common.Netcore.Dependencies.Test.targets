@@ -35,7 +35,7 @@
       <HintPath>$(windir)\Microsoft.NET\assembly\GAC_MSIL\System.Management.Automation\v4.0_3.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
     </Reference>
     <PackageReference Include="Microsoft.Azure.PowerShell.Storage.TestPrerequisites" Version="*" IncludeAssets="All" PrivateAssets="none" Condition="'$(UseStorageDataPlane)' == 'true'"/>
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" Condition="'$(UseStorageDataPlane)' != 'true'"/>
+    <!-- <PackageReference Include="Newtonsoft.Json" Version="9.0.1" Condition="'$(UseStorageDataPlane)' != 'true'"/> -->
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" Condition="'$(UseStorageDataPlane)' == 'true'"/>
   </ItemGroup>
   
